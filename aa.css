@@ -1,0 +1,232 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.8;
+    background-color: #f3f0fa;
+}
+
+header {
+    background: linear-gradient(to right, #673ab7, #512da8);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 5px solid #e1306c;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero {
+    padding: 2rem;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #555;
+    position: relative;
+    padding-left: 30px;
+    font-family: 'Georgia', serif;
+}
+
+.hero h2 .decorated-line {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 100%;
+    background-color: #e1306c;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: #444;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.hero p .decorated {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e1306c;
+}
+
+.activities {
+    padding: 2rem;
+    background: #fff;
+}
+
+.activities h2 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 30px;
+    font-family: 'Georgia', serif;
+}
+
+.activities h2 .decorated-line {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 100%;
+    background-color: #e1306c;
+}
+
+.activities .activity h3 {
+    position: relative;
+    padding-left: 30px;
+    color: #555;
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+}
+
+.activities .activity h3 .decorated-line {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 100%;
+    background-color: #e1306c;
+}
+
+.activities .activity-list {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.activity-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery {
+    padding: 2rem;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.gallery h2 {
+    color: #444;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 30px;
+}
+
+.gallery h2 .decorated-line {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 100%;
+    background-color: #e1306c;
+}
+
+.gallery-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+footer .footer-button-group {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+footer .footer-button {
+    text-align: center;
+}
+
+footer .footer-button p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.location-button, .whatsapp-button, .instagram-button {
+    color: #fff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.location-button {
+    background-color: #4285F4;
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+}
+
+.instagram-button {
+    background-color: #e1306c;
+}
+
+footer .location-button:hover,
+footer .whatsapp-button:hover,
+footer .instagram-button:hover {
+    opacity: 0.8;
+}
+
+footer .location-icon,
+footer .whatsapp-icon,
+footer .instagram-icon {
+    font-size: 22px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 2rem 0;
+    }
+
+    footer .footer-button-group {
+        flex-direction: column;
+    }
+
+    footer .location-icon,
+    footer .whatsapp-icon,
+    footer .instagram-icon {
+        font-size: 20px;
+    }
+}
